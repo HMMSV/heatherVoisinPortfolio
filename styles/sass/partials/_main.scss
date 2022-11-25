@@ -1,0 +1,62 @@
+@use './variables';
+
+h2 {
+    text-align: center;
+    padding: 100px;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+}
+
+.aboutMe {
+}
+
+.skills {
+    background-image: url(../assets/1567806.jpg);
+}
+
+.skills ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+i {
+    color: white;
+    font-size: 4em;
+    padding: 50px 70px;
+}
+
+.firebase {
+    
+    color: white;
+    font-size: 4em;
+    padding: 80px;
+        
+}
+
+.containerWrapper {
+    display: flex;
+}
+
+.formContainer {
+    width: 50%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+        textarea {
+            resize: none;
+            }
+        }
+}
+
+.contactInfoContainer {
+    width: 50%;
+}

@@ -1,0 +1,10 @@
+@use './variables';
+
+body {
+    font-family: variables.$primaryFont;
+}
+
+main, footer {
+    background-color: black;
+    color:white;
+}
