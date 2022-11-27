@@ -1,11 +1,13 @@
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 img {
   max-width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 body,
@@ -25,11 +27,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 500px;
-}
-header p {
-  text-align: center;
-  padding-bottom: 50px;
-  font-size: 1.5rem;
 }
 
 nav ul {
@@ -54,46 +51,79 @@ nav a {
 
 a:hover,
 a:focus {
-  border-bottom: 2px solid black;
+  border: 2px dotted black;
 }
 
 h1 {
   text-align: center;
   padding: 50px 0px 10px 0px;
-  font-size: 4rem;
+  font-size: 4em;
+}
+
+.headerP {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 1.5rem;
+}
+
+.headerP::after {
+  background-color: #93E9BE;
+  content: "";
+  width: 20%;
+  position: absolute;
+  display: block;
+  height: 0.2rem;
+  left: 40%;
 }
 
 h2 {
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   text-transform: uppercase;
+  font-size: 2em;
+}
+
+h2::after {
+  background-color: #93E9BE;
+  content: "";
+  width: 12%;
+  position: absolute;
+  display: block;
+  height: 0.2rem;
+  left: 44%;
 }
 
 p {
   text-align: center;
 }
 
-.aboutMe {
+.aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.aboutMe img {
-  border-radius: 70%;
+.aboutContainer img {
+  border-radius: 50%;
   width: 300px;
   height: 300px;
+  margin-left: 100px;
 }
 
 .aboutImgContainer, .aboutTextContainer {
   width: 50%;
-  padding: 100px 0px;
+  padding: 50px;
 }
 
 .skills {
-  background-image: url(../assets/1567806.jpg);
+  background-image: url(../assets/black.jpg);
+  background-size: 100%;
+}
+.skills p {
+  color: white;
+  font-family: "Cardo", serif;
 }
 
-.skills ul {
+.skillsIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,23 +132,82 @@ p {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: center;
   padding-bottom: 50px;
 }
 
-i {
+.skillsIcons li i {
   color: white;
   font-size: 4em;
-  padding: 50px 70px;
+  padding: 50px 80px;
 }
 
-.firebase {
+.devicon-firebase-plain path {
   color: white;
   font-size: 4em;
-  padding: 80px;
+  padding: 50px 80px;
 }
 
-.containerWrapper {
+.projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projectImgContainer, .projectTextContainer {
+  width: 50%;
+  padding: 40px;
+  display: block;
+}
+
+.projectTextContainer p {
+  padding: 20px;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+h3 {
+  padding: 0px 0px 20px 20px;
+  font-size: 1.8em;
+}
+
+.projectIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 20px 20px 10px;
+}
+.projectIcons i {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+
+.projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectLinks a {
+  text-decoration: none;
+  background-color: #93E9BE;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Cardo", serif;
+  margin: 20px;
+}
+
+.contact {
+  background-image: url(../assets/black.jpg);
+  background-size: 100%;
+}
+
+.contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,6 +215,7 @@ i {
 
 .formContainer {
   width: 50%;
+  padding: 50px;
 }
 .formContainer form {
   display: -webkit-box;
@@ -137,12 +227,32 @@ i {
           flex-direction: column;
   text-align: center;
 }
+.formContainer form input {
+  margin: 20px 0px;
+  border-radius: 5px;
+}
 .formContainer form textarea {
   resize: none;
+  margin: 20px 0px;
+  border-radius: 5px;
 }
 
 .contactInfoContainer {
   width: 50%;
+  padding: 50px;
+}
+.contactInfoContainer p {
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+.contactButton {
+  background-color: #93E9BE;
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+  margin-left: 100px;
+  font-family: "Cardo", serif;
 }
 
 html {

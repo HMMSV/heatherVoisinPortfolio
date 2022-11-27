@@ -2,73 +2,171 @@
 
 h2 {
     text-align: center;
-    padding: 100px;
+    padding: 50px;
     text-transform: uppercase;
+    font-size: 2em;
 }
+
+h2::after {
+    background-color: #93E9BE;
+    content: "";
+    width: 12%;
+    position: absolute;
+    display: block;
+    height: 0.2rem;
+    left: 44%;
+}
+
 
 p {
     text-align: center;
 }
 
-.aboutMe {
+.aboutContainer {
     display: flex;
 
     img {
-        border-radius: 70%;
+        border-radius: 50%;
         width: 300px;
         height: 300px;
+        margin-left: 100px;
     }
 }
 
 .aboutImgContainer, .aboutTextContainer {
     width: 50%;
-    padding: 100px 0px;
+    padding: 50px;
 }
 
 .skills {
-    background-image: url(../assets/1567806.jpg);
+    background-image: url(../assets/black.jpg);
+    background-size: 100%;
+
+    p {
+        color: white;
+        font-family: variables.$primaryFont;
+    }
 }
 
-.skills ul {
+.skillsIcons {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    text-align: center;
+    // text-align: center;
     padding-bottom: 50px;
 }
 
-i {
+.skillsIcons li i {
     color: white;
     font-size: 4em;
-    padding: 50px 70px;
+    padding: 50px 80px;
 }
 
-.firebase {
-    
+.devicon-firebase-plain path {
     color: white;
     font-size: 4em;
-    padding: 80px;
-        
+    padding: 50px 80px;
 }
 
-.containerWrapper {
+// .firebase { 
+//     color: white;
+//     font-size: 4em;
+//     padding: 80px;       
+// }
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectImgContainer, .projectTextContainer {
+    width: 50%;
+    padding: 40px;
+    display: block;
+}
+
+.projectTextContainer p {
+    padding: 20px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+h3 {
+    padding: 0px 0px 20px 20px;
+    font-size: 1.8em;
+}
+
+.projectIcons {
+    display: flex;
+    padding: 0px 20px 20px 10px;
+
+    i {
+        font-size: 2em;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.projectLinks {
+    display: flex;
+}
+
+.projectLinks a {
+    text-decoration: none;
+    background-color: #93E9BE;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: variables.$primaryFont;
+    margin: 20px;
+}
+
+.contact {
+    background-image: url(../assets/black.jpg);
+    background-size: 100%;
+}
+
+.contactContainer {
     display: flex;
 }
 
 .formContainer {
     width: 50%;
+    padding: 50px;
 
     form {
         display: flex;
         flex-direction: column;
         text-align: center;
+
+        input {
+            margin: 20px 0px;
+            border-radius: 5px;
+        }
     
         textarea {
             resize: none;
+            margin: 20px 0px ;
+            border-radius: 5px;
             }
         }
 }
 
 .contactInfoContainer {
     width: 50%;
+    padding: 50px;
+
+    p {
+        padding: 20px;
+        font-size: 1.5em;
+    }
+}
+
+.contactButton {
+    background-color: #93E9BE;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    margin-left: 100px;
+    font-family: variables.$primaryFont;
 }

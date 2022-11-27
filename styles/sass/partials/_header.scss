@@ -5,13 +5,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 500px;
-
-    p {
-        text-align: center;
-        padding-bottom: 50px;
-        font-size: 1.5rem;
-    }
-
 }
 
 nav ul {
@@ -32,11 +25,27 @@ nav a {
 
 a:hover,
 a:focus {
-    border-bottom: 2px solid black;
+    border: 2px dotted black;
 }
 
 h1 {
     text-align: center;
     padding: 50px 0px 10px 0px;
-    font-size: 4rem;
+    font-size: 4em;
+}
+
+.headerP {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+.headerP::after {
+    background-color: #93E9BE;
+    content: "";
+    width: 20%;
+    position: absolute;
+    display: block;
+    height: 0.2rem;
+    left: 40%;
 }
