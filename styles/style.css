@@ -115,7 +115,7 @@ p {
 }
 
 .skills {
-  background-image: url(../assets/black.jpg);
+  background-image: url(../assets/darkpalm.jpg);
   background-size: 100%;
 }
 .skills p {
@@ -127,24 +127,30 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 50px;
 }
-
-.skillsIcons li i {
-  color: white;
-  font-size: 4em;
-  padding: 50px 80px;
+.skillsIcons li {
+  padding: 70px;
 }
 
-.devicon-firebase-plain path {
+.devIcon {
   color: white;
-  font-size: 4em;
-  padding: 50px 80px;
+  font-size: 6em;
+  text-shadow: 2px 4px 6px #93E9BE;
+}
+
+.devIconG, .devIconF {
+  color: white;
+  font-size: 7em;
+  text-shadow: 2px 4px 6px #93E9BE;
 }
 
 .projectContainer {
@@ -203,7 +209,7 @@ h3 {
 }
 
 .contact {
-  background-image: url(../assets/black.jpg);
+  background-image: url(../assets/darkpalm.jpg);
   background-size: 100%;
 }
 
@@ -244,6 +250,7 @@ h3 {
 .contactInfoContainer p {
   padding: 20px;
   font-size: 1.5em;
+  background-color: rgba(41, 54, 49, 0.5);
 }
 
 .contactButton {
