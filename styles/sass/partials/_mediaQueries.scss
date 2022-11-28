@@ -1,1 +1,53 @@
 @use './variables';
+
+//DESKTOP STYLING
+
+@media (max-width: 1085px) {
+
+}
+
+//TABLET STYLING
+
+@media (max-width: 845px) {
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutImgContainer, .aboutTextContainer {
+        width: 100%;
+        // align-items: center;
+    }
+
+    .aboutImgContainer img {
+        align-items: center;
+    }
+
+    .aboutTextContainer p {
+        text-align: center;
+    }
+}
+
+//MOBILE STYLING
+
+@media (max-width: 560px) {
+    nav a {
+        padding: 20px;
+    }
+
+    .skillsIcons {
+        padding-left: 100px;
+    }
+
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectImgContainer {
+                img {
+                        width: 100%;
+                    }
+    }
+}
+

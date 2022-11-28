@@ -2,7 +2,7 @@
 
 h2 {
     text-align: center;
-    padding: 50px;
+    padding: 60px 50px 30px 50px;
     text-transform: uppercase;
     font-size: 2em;
 }
@@ -17,25 +17,40 @@ h2::after {
     left: 44%;
 }
 
+.wave {
+    font-size: 1.6em;
+}
 
-p {
-    text-align: center;
+.aboutTextContainer {
+
+    p {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 10px 20px 30px 0px;
+    }
 }
 
 .aboutContainer {
     display: flex;
 
     img {
-        border-radius: 50%;
+        border-radius: 60%;
         width: 300px;
         height: 300px;
-        margin-left: 100px;
+        margin-left: 70px;
     }
 }
 
-.aboutImgContainer, .aboutTextContainer {
-    width: 50%;
-    padding: 50px;
+.aboutTextContainer {
+    width: 60%;
+    padding: 20px;
+}
+
+.aboutImgContainer {
+    padding-bottom: 50px;
+    width: 40%;
+    padding: 20px;
+    margin: 40px 30px 20px 0px;
 }
 
 .skills {
@@ -72,15 +87,24 @@ p {
     text-shadow: 2px 4px 6px #93E9BE;
 }
 
+.projects {
+    margin: 0px 20px 0px 20px;
+}
+
 .projectContainer {
     display: flex;
     flex-direction: row;
+    background-color: rgba(41, 54, 49, 0.5);
+    border-radius: 10px;
+    margin: 40px;
 }
 
 .projectImgContainer, .projectTextContainer {
     width: 50%;
     padding: 40px;
     display: block;
+    // margin: 20px 0px 20px 0px;
+    border-radius: 20px;
 }
 
 .projectTextContainer p {
@@ -94,7 +118,7 @@ h3 {
     font-size: 1.8em;
 }
 
-.projectIcons {
+.projectIcons, .contactIcons {
     display: flex;
     padding: 0px 20px 20px 10px;
 
@@ -140,12 +164,20 @@ h3 {
         input {
             margin: 20px 0px;
             border-radius: 5px;
+            padding: 10px;
+            opacity: 50%;
+            color: black;
+            font-weight: 600;
         }
     
         textarea {
             resize: none;
             margin: 20px 0px ;
             border-radius: 5px;
+            padding: 10px;
+            opacity: 50%;
+            color: black;
+            font-weight: 600;
             }
         }
 }
@@ -168,4 +200,26 @@ h3 {
     width: 50%;
     margin-left: 100px;
     font-family: variables.$primaryFont;
+    font-weight: 600;
 }
+
+.contactButton:hover,
+.contactButton:focus {
+    border: 2px dotted black;
+}
+
+.contactIcons {
+    display: flex;
+
+    i {
+        color: #93E9BE;
+        font-size: 4em;
+        margin: 20px 50px 0px 50px;
+    }
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
