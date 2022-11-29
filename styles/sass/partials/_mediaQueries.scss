@@ -12,27 +12,43 @@
     .aboutContainer {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .aboutImgContainer, .aboutTextContainer {
         width: 100%;
-        // align-items: center;
     }
 
     .aboutImgContainer img {
-        align-items: center;
+        margin-left: 250px;
+        margin-right: 250px;
     }
 
     .aboutTextContainer p {
         text-align: center;
+    }
+
+    .projectImgContainer img {
+        width: 100%;
+        height: 100%;
     }
 }
 
 //MOBILE STYLING
 
 @media (max-width: 560px) {
+
+    header {
+        background-size: 1200px;
+    }
+
     nav a {
         padding: 20px;
+    }
+
+    .aboutImgContainer img {
+        width: 100%;
+        margin: 0;
     }
 
     .skillsIcons {
@@ -44,10 +60,21 @@
         flex-direction: column;
     }
 
-    .projectImgContainer {
-                img {
-                        width: 100%;
-                    }
+    .projectImgContainer, .projectTextContainer {
+        width: 100%;
+    }
+
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formContainer {
+        width: 100%;
+    }
+
+    .contactInfoContainer {
+        width: 100%;
     }
 }
 
