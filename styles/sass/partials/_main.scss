@@ -8,7 +8,7 @@ h2 {
 }
 
 h2::after {
-    background-color: #93E9BE;
+    background-color: variables.$accentColour;
     content: "";
     width: 12%;
     position: absolute;
@@ -78,13 +78,13 @@ h2::after {
 .devIcon {
     color: white;
     font-size: 6em;
-    text-shadow: 2px 4px 6px #93E9BE;
+    text-shadow: 2px 4px 6px variables.$accentColour;
 }
 
 .devIconG, .devIconF {
     color: white;
     font-size: 7em;
-    text-shadow: 2px 4px 6px #93E9BE;
+    text-shadow: 2px 4px 6px variables.$accentColour;
 }
 
 .projects {
@@ -94,7 +94,7 @@ h2::after {
 .projectContainer {
     display: flex;
     flex-direction: row;
-    background-color: rgba(41, 54, 49, 0.5);
+    background-color: variables.$backgroundColour;
     border-radius: 10px;
     margin: 40px;
 }
@@ -103,7 +103,6 @@ h2::after {
     width: 50%;
     padding: 40px;
     display: block;
-    // margin: 20px 0px 20px 0px;
     border-radius: 20px;
 }
 
@@ -135,7 +134,7 @@ h3 {
 
 .projectLinks a {
     text-decoration: none;
-    background-color: #93E9BE;
+    background-color: variables.$accentColour;
     color: black;
     border-radius: 5px;
     padding: 5px;
@@ -189,12 +188,12 @@ h3 {
     p {
         padding: 20px;
         font-size: 1.5em;
-        background-color: rgba(41, 54, 49, 0.5);
+        background-color: variables.$backgroundColour;
     }
 }
 
 .contactButton {
-    background-color: #93E9BE;
+    background-color: variables.$accentColour;
     border-radius: 5px;
     padding: 10px;
     width: 50%;
@@ -212,7 +211,7 @@ h3 {
     display: flex;
 
     i {
-        color: #93E9BE;
+        color: variables.$accentColour;
         font-size: 4em;
         margin: 20px 50px 0px 50px;
     }

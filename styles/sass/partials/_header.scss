@@ -46,7 +46,7 @@ h1 {
 }
 
 .headerP::after {
-    background-color: #93E9BE;
+    background-color: variables.$accentColour;
     content: "";
     width: 20%;
     position: absolute;
