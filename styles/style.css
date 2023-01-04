@@ -381,7 +381,7 @@ footer p {
     padding-left: 20px;
   }
   .skillsIcons {
-    padding-left: 100px;
+    padding-left: 50px;
   }
   .projectContainer {
     display: -webkit-box;
@@ -439,7 +439,7 @@ footer p {
     cursor: pointer;
     padding-top: 10px;
     position: relative;
-    left: 190px;
+    left: 180px;
   }
 }
 html {
