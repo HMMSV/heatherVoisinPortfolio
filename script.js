@@ -18,3 +18,11 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// form reset
+
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
