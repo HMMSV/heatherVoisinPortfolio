@@ -29,17 +29,17 @@ a:focus {
     border: 2px dotted black;
 }
 
-.hamburgerMenu {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    border: black solid 1px;
-    background: white;
-    cursor: pointer;
-}
+// .hamburgerMenu {
+//     display: none;
+//     position: fixed;
+//     z-index: 100;
+//     top: 1rem;
+//     right: 1rem;
+//     padding: 4px;
+//     border: black solid 1px;
+//     background: white;
+//     cursor: pointer;
+// }
 
 h1 {
     text-align: center;
@@ -63,7 +63,19 @@ h1 {
     left: 40%;
 }
 
+.hamburger {
+    display: none;
+}
 
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
 
 
 

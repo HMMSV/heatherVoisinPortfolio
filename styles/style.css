@@ -55,18 +55,6 @@ a:focus {
   border: 2px dotted black;
 }
 
-.hamburgerMenu {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
-}
-
 h1 {
   text-align: center;
   padding: 50px 0px 10px 0px;
@@ -87,6 +75,20 @@ h1 {
   display: block;
   height: 0.2rem;
   left: 40%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
 
 h2 {
@@ -114,6 +116,7 @@ h2::after {
   text-align: left;
   font-size: 1.2em;
   margin: 10px 20px 30px 0px;
+  line-height: 1.5;
 }
 
 .aboutContainer {
@@ -315,6 +318,9 @@ h3 {
   display: -ms-flexbox;
   display: flex;
 }
+.contactIcons a {
+  border: none;
+}
 .contactIcons i {
   color: #93E9BE;
   font-size: 4em;
@@ -331,7 +337,7 @@ footer {
 
 footer p {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 @media (max-width: 845px) {
@@ -372,6 +378,7 @@ footer p {
   .aboutImgContainer img {
     width: 100%;
     margin: 0;
+    padding-left: 20px;
   }
   .skillsIcons {
     padding-left: 100px;
@@ -402,6 +409,37 @@ footer p {
   }
   .contactInfoContainer {
     width: 100%;
+  }
+  .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    opacity: 70%;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .navMenu.active {
+    left: 0;
+  }
+  .navItem {
+    margin: 2.5rem 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding-top: 10px;
+    position: relative;
+    left: 190px;
   }
 }
 html {

@@ -27,6 +27,7 @@ h2::after {
     text-align: left;
     font-size: 1.2em;
     margin: 10px 20px 30px 0px;
+    line-height: 1.5;
     }
 }
 
@@ -210,6 +211,10 @@ h3 {
 .contactIcons {
     display: flex;
 
+    a {
+        border: none;
+    }
+
     i {
         color: variables.$accentColour;
         font-size: 4em;
@@ -227,6 +232,6 @@ footer {
 
 footer p {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
