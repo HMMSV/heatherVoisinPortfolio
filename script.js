@@ -26,3 +26,6 @@ window.onbeforeunload = () => {
     form.reset();
   }
 }
+
+//typing function
+

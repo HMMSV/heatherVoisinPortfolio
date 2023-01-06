@@ -38,8 +38,12 @@
 
 @media (max-width: 560px) {
 
+    body {
+        max-width: 100%;
+    }
+
     header {
-        background-size: 1350px;
+        background-size: 1300px;
     }
 
     nav a {
@@ -53,7 +57,11 @@
     }
 
     .skillsIcons {
-        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-repeat: no-repeat;
     }
 
     .projectContainer {
@@ -63,6 +71,16 @@
 
     .projectImgContainer, .projectTextContainer {
         width: 100%;
+    }
+
+    .projectLinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        li {
+            padding: 20px;
+        }
     }
 
     .contactContainer {
@@ -108,18 +126,5 @@
         position: relative;
         left: 180px;
     }
-
-    // .hamburger.active .bar:nth-child(2) {
-    //          opacity: 0;
-    //      }
-    
-    // .hamburger.active .bar:nth-child(1) {
-    //          transform: translateY(8px) rotate(45deg);
-    //      }
-    
-    // .hamburger.active .bar:nth-child(3) {
-    //          transform: translateY(-8px) rotate(-45deg);
-    //      }
-
 }
 

@@ -45,6 +45,7 @@ h2::after {
 .aboutTextContainer {
     width: 60%;
     padding: 20px;
+    font-size: 0.9em;
 }
 
 .aboutImgContainer {
@@ -65,14 +66,21 @@ h2::after {
 }
 
 .skillsIcons {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    // row-gap: 40px;
+    // grid-column-gap: 20px;
+    padding: 50px 0px 50px 100px;
 
     li {
-        padding: 70px;
+        line-height: 4;
+        padding: 20px;
+    }
+
+
+    i:hover {
+        color: variables.$accentColour;
     }
 }
 
@@ -110,7 +118,8 @@ h2::after {
 .projectTextContainer p {
     padding: 20px;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    line-height: 150%;
 }
 
 h3 {
@@ -168,6 +177,8 @@ h3 {
             opacity: 50%;
             color: black;
             font-weight: 600;
+            font-family: inherit;
+            font-size: 0.9em;
         }
     
         textarea {
@@ -178,6 +189,8 @@ h3 {
             opacity: 50%;
             color: black;
             font-weight: 600;
+            font-family: inherit;
+            font-size: 0.9em;
             }
         }
 }
@@ -188,8 +201,9 @@ h3 {
 
     p {
         padding: 20px;
-        font-size: 1.5em;
+        font-size: 1.2em;
         background-color: variables.$backgroundColour;
+        line-height: 150%;
     }
 }
 
@@ -232,6 +246,6 @@ footer {
 
 footer p {
     text-align: center;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
