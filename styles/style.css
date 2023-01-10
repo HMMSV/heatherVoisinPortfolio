@@ -151,7 +151,7 @@ h2::after {
 }
 .skills p {
   color: white;
-  font-family: "Inconsolata", monospace;
+  font-family: "Exo", sans-serif;
 }
 
 .skillsIcons {
@@ -240,7 +240,7 @@ h3 {
   color: black;
   border-radius: 5px;
   padding: 5px;
-  font-family: "Inconsolata", monospace;
+  font-family: "Exo", sans-serif;
   margin: 20px;
 }
 
@@ -308,7 +308,7 @@ h3 {
   padding: 10px;
   width: 50%;
   margin-left: 100px;
-  font-family: "Inconsolata", monospace;
+  font-family: "Exo", sans-serif;
   font-weight: 600;
 }
 
@@ -739,7 +739,7 @@ template {
 }
 
 body {
-  font-family: "Inconsolata", monospace;
+  font-family: "Exo", sans-serif;
 }
 
 main, footer {
