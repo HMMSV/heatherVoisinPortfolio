@@ -126,10 +126,12 @@ h2::after {
   display: flex;
 }
 .aboutContainer img {
-  border-radius: 60%;
-  width: 300px;
-  height: 300px;
-  margin-left: 70px;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  margin-left: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .aboutTextContainer {
