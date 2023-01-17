@@ -128,7 +128,7 @@ h2::after {
   display: flex;
 }
 .aboutContainer img {
-  border-radius: 50%;
+  border-radius: 70%;
   width: 350px;
   height: 350px;
   margin-left: 40px;
