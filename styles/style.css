@@ -445,9 +445,6 @@ footer p {
   .contactInfoContainer {
     width: 100%;
   }
-  button {
-    width: 100%;
-  }
   .navMenu {
     position: fixed;
     left: -100%;
