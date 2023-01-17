@@ -70,8 +70,6 @@ h2::after {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    // row-gap: 40px;
-    // grid-column-gap: 20px;
     padding: 50px;
     place-items: center;
 
