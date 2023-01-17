@@ -1,6 +1,6 @@
 .wrapper {
-  max-width: 1170px;
-  width: 100%;
+  max-width: 1440px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -27,6 +27,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 nav ul {
@@ -160,7 +162,8 @@ h2::after {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding: 50px 0px 50px 100px;
+  padding: 50px;
+  place-items: center;
 }
 .skillsIcons li {
   line-height: 4;
@@ -377,6 +380,7 @@ footer p {
 @media (max-width: 560px) {
   body {
     max-width: 100%;
+    overflow-x: hidden;
   }
   header {
     background-size: 1300px;
@@ -397,11 +401,9 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
     background-repeat: no-repeat;
+    place-items: center;
   }
   .projectContainer {
     display: -webkit-box;

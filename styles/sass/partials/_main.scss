@@ -72,7 +72,8 @@ h2::after {
     grid-template-rows: repeat(2, 1fr);
     // row-gap: 40px;
     // grid-column-gap: 20px;
-    padding: 50px 0px 50px 100px;
+    padding: 50px;
+    place-items: center;
 
     li {
         line-height: 4;
