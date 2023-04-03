@@ -40,7 +40,8 @@ h1 {
 .headerP {
     text-align: center;
     padding-bottom: 50px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    // color: variables.$accentColour;
 }
 
 .headerP::after {
@@ -67,6 +68,15 @@ h1 {
     background-color: #101010;
 }
 
+span {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
 
 
 

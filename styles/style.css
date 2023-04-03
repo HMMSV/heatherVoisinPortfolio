@@ -67,7 +67,7 @@ h1 {
 .headerP {
   text-align: center;
   padding-bottom: 50px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .headerP::after {
@@ -94,6 +94,22 @@ h1 {
   background-color: #101010;
 }
 
+span {
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 h2 {
   text-align: center;
   padding: 60px 50px 30px 50px;
@@ -451,10 +467,11 @@ footer p {
   .contactInfoContainer {
     width: 100%;
   }
-  .contacticons {
+  .contacticons i {
     place-items: center;
     width: 100%;
     margin: 0px;
+    padding: 0px;
   }
   .navMenu {
     position: fixed;

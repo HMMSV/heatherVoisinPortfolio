@@ -29,3 +29,15 @@ window.onbeforeunload = () => {
 
 //typing function
 
+let message = "Front-End Web Developer"
+let textPosition = 0;
+let speed = 100;
+
+function typewriter() {
+  document.querySelector("#message").innerHTML = message.substring(0, textPosition) + '<span>\u25AE</span>'
+
+  if (textPosition++ !== message.length)
+  setTimeout(typewriter, speed)
+}
+
+window.addEventListener("load", typewriter)
